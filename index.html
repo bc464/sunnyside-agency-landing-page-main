@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <link rel="stylesheet" href="style.css"></link>
+  <link rel="stylesheet" href="queries.css"></link>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+  <header class="header">
+    <a href="#">
+      <img class="logo-top" src="images/logo.svg" alt="logo image">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="about.html" aria-label="link to about">About</a></li>
+        <li><a class="main-nav-link" href="services.html" aria-label="link to about">Services</a></li>
+        <li><a class="main-nav-link" href="projects.html" aria-label="link to about">Projects</a></li>
+        <li><a class="main-nav-link nav-cta" href="contact.html" aria-label="link to about">Contact</a></li>
+      </ul>
+    </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+  </header>
+
+  <section class="section-hero">
+    <div class="hero-text-box">
+      <h1 class="heading-primary">We are creatives</h1>
+    </div>
+    <div class="arrow-down" role="image">
+        <img class="arrow-down" src="images/icon-arrow-down.svg" alt="icon arrow down">
+    </div>
+    <div>
+      <img class="main-img" src="images/desktop/image-header.jpg" alt="orange picture">
+    </div>
+  </section>
+  
+  <main>
+    <section class="transform grid grid--2-cols">
+      <div class="columns">
+        <h2 class="column-heading">Transform your brand</h2>
+        <p class="column-text">We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a href="#" aria-label="link to learn more">Learn more</a>
+      </div>
+      <div class="column-img">
+        <img class="transform-img" src="images/desktop/image-transform.jpg" alt="transform image">
+      </div>
+    </section >
+    <section class="stand-out grid grid--2-cols">
+      <div class="column-img">
+        <img class="stand-out-img" src="images/desktop/image-stand-out.jpg" alt="stand out image">
+      </div>
+      <div class="columns">
+        <h2 class="column-heading">Stand out to the right audience
+        </h2>
+        <p class="column-text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a href="#" aria-label="link to learn more">Learn more</a>
+      </div>
+    </section>
+    <section class="graphic-photography-design ">
+      <div class="container ">
+        <div class="graphic-design">
+          <div class="graphic-img">
+            <img class="graphic-design-img" src="images/desktop/image-graphic-design.jpg" alt="graphic design picture">
+          <div class="graphic-text">
+            <h2 class="graphic--heading">Graphic Design</h2>
+            <p class="graphic-paragraph ">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          </div>
+        </div>
+      </div>
+      <div class="photography">
+        <div class="photography-img">
+          <img class="photography-design-img" src="images/desktop/image-photography.jpg" alt="phtography image">
+        </div>
+          <div class="photography-text">
+            <h2 class="photography--heading"> Photography</h2>
+            <p class="photography-paragraph">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-testimonies">
+      <h3>Client testimonials</h3>
+        <div class="testimonies grid grid--3-cols">
+          <div class="testimony-card">
+            <img class="testimonial-img" src="images/image-emily.jpg" alt="image of emily">
+            <p class="testimonial-text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <h4 class="testimonial-name">Emily R.</h4>
+            <p class="testimonial-capacity">Marketing Director</p>
+          </div>
+          <div class="testimony-card">
+            <img class="testimonial-img" src="images/image-thomas.jpg" alt="image of thomas">
+            <p class="testimonial-text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <h4 class="testimonial-name">Thomas S.</h4>
+            <p class="testimonial-capacity">Chief Operating Officer</p>
+          </div>
+          <div class="testimony-card">
+            <img class="testimonial-img" src="images/image-jennie.jpg" alt="image of jennie">
+            <p class="testimonial-text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <h4 class="testimonial-name">Jennie F.</h4>
+            <p class="testimonial-capacity">Business Owner</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-product">
+        <div class="product-images mobile-images grid grid--4-cols">
+          <img class="product-img" src="images/desktop/image-gallery-milkbottles.jpg" alt="milk bottle image">
+          <img class="mobile-img" src="images/mobile/image-gallery-milkbottles.jpg" alt="milk bottle image">
+          <img class="product-img" src="images/desktop/image-gallery-orange.jpg" alt="orange image">
+          <img class="mobile-img" src="images/mobile/image-gallery-orange.jpg" alt="orange image">
+          <img class="product-img" src="images/desktop/image-gallery-cone.jpg" alt="cone image">
+          <img class="mobile-img" src="images/mobile/image-gallery-cone.jpg" alt="cone image">
+          <img class="product-img" src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes image">
+          <img class="mobile-img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes image">
+        </div>
+      </section>
+  </main>
+  <footer>
+    <div class="logo-bottom">
+      <img class="logo-bottom-img" src="images/logo.svg" alt="logo">
+    </div>
+    <div class="nav-footer">
+      <a href="about.html" aria-label="link to about">About</a>
+      <a href="services.html" aria-label="link to about">Services</a>
+      <a href="projects.html" aria-label="link to about">Projects</a>
+    </div>
+    <div class="social">
+      <a href="www.facebook.com"><i class="fa fa-facebook-f fa-lg" alt="facebook"></i></a>
+      <a href="www.instagram.com"><i class="fa fa-instagram fa-lg" alt="instagram"></i></a>
+      <a href="www.twitter.com"><i class="fa fa-twitter fa-lg" alt="twitter" ></i></a>
+      <a href="www.pinterest.com"><i class="fa fa-pinterest fa-lg" alt="pinterest" ></i></a>
+    </div>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">brian</a>.
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

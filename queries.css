@@ -1,0 +1,131 @@
+@media only screen and (max-width: 1060px){
+	html {
+		font-size: 50%;
+	}
+}
+@media only screen and (max-width: 844px){
+	html {
+		font-size: 43%;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	html {
+		font-size: 43.75%;
+	}
+	.logo-top {
+		height: 3rem;
+		padding-left: 5%;
+	}
+	.main-img {
+		height: 50vh;
+	}
+	
+	.header {
+		padding:5rem 2rem;
+	}
+
+	.main-nav {
+		display: none;
+	}
+
+	.transform	 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.stand-out {
+		display: flex;
+		flex-direction: column;
+	}
+	.columns {
+	padding: 3.6rem 1.4rem 3.6rem 1.4rem;
+	text-align: center;
+	}
+	
+	.container {
+		grid-template-columns: 1fr;
+	}
+		
+	.testimonies {
+		grid-template-columns: 1fr;
+		gap: 2.4rem;
+	}
+	.testimonial-img  {
+		margin-top: 2rem;
+	}
+	.testimony-card {
+		padding: 0 3.6rem;
+		width: 375px;
+	}
+	.product-img {
+		display: none;
+	}
+	
+	.mobile-images {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.mobile-img {
+		display: grid;
+	}
+	.btn-mobile-nav {
+		display: block;
+	}
+	.main-nav {
+		background-color: rgba(255,255,255,0.97);
+		position: absolute;
+		top: 75px;
+		left: 5%;
+		width: 90%;
+
+		padding: 3rem 0;
+		transform: translateX(100%);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		transition: all 0.5s ease-in;
+		/*STEPS TO HIDE ELEMENT without using DISPLAY: NONE*/
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+		z-index: 1;
+
+	}
+	.main-nav::after {
+  		content: "";
+  		position: absolute;
+  		top: -10%;
+  		right: 0;
+  		border-width: 15px;
+  		border-style: solid;
+  		border-color: transparent #fff #fff transparent ;
+	}
+	.nav-open .main-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(0);
+	}
+	.nav-open .icon-mobile-nav[name="close-outline"] {
+		display: block;
+	}
+	.nav-open .icon-mobile-nav[name="menu-outline"] {
+		display: none;
+	}
+	.main-nav-list {
+		flex-direction: column;
+		gap:  4.8rem;
+	}
+	.main-nav-link:link,
+	.main-nav-link:visited {
+		font-size: 2.4rem;
+		color: hsl(213, 9%, 39%);
+	}
+	.main-nav-link.nav-cta:link,
+	.main-nav-link.nav-cta:visited {
+		padding: 1.6rem 3rem;
+		background-color: hsl(51, 100%, 49%);
+	}
+}
