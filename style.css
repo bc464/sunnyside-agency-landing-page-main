@@ -211,12 +211,12 @@ p {
 	flex-direction: row;
 }
 .graphic-design-img {
-	height: 40rem;
+	/*height: 40rem;*/
 	width: 100%;
 }
 
 .photography-design-img {
-	height: 40rem;
+	/*height: 40rem;*/
 	width: 100%;
 }
 .graphic-text,
